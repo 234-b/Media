@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jailson2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-28 05:22:29 "/>
+        <attribute name="created" value="amFpbHNvbjI7REVTS1RPUC04MzI3MjM5OzIwMjItMDYtMjM7IjA0OjA4OjA2ICI7Mjk0NQ=="/>
+        <attribute name="edited" value="amFpbHNvbjI7REVTS1RPUC04MzI3MjM5OzIwMjItMDYtMjg7IjA1OjIyOjI5ICI7MzszMDYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <declare name="aluno" type="String" array="False" size=""/>
+            <output expression="&quot;Digite o nome do aluno: &quot;" newline="True"/>
+            <input variable="aluno"/>
+            <output expression="&quot;Digite a primeira nota: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Digite a segunda nota: &quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Digite a terceira nota: &quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;Digite a quarta nota: &quot;" newline="True"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="&quot;A m&#233;dia do aluno&quot; &amp; aluno &amp; &quot; &#233; de: &quot; &amp;media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Ele foi aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ele foi reprovado!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
